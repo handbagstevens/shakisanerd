@@ -12,8 +12,12 @@ function init () {
     $('#revealnerdbtn').click(function () {
     	var el = $('#revealnerdtext');
     	el.text(el.text() + 'Shak is a nerd ');
-        $('#part4').show();
+        $('#truebtn').show();
     });
+
+    $('#truebtn').click(function () {
+        $('#part4').show();
+    })
 
     function repeatStrToLen (str, len) {
         var n = Math.ceil(len / str.length);
