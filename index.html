@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Shak is a nerd</title>
+    <title>Shak is a nerd</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
-<body>
-<h1>Shak is a nerd</h1>
+<body onload="init()">
+    <div>
+        <h1>Shak is a nerd</h1>
+    </div>
+
+    <hr>
+
+    <div>
+        <h1>Who is a nerd?</h1>
+        <select id="whonerdselect">
+            <option value="pls">Please select</option>
+            <option>Shak</option>
+        </select>
+
+        <h1 id="whonerdtext"></h1>
+    </div>
+
+    <hr>
+
+    <div>
+        <h1>Click the button to reveal who is a nerd</h1>
+        <button id="revealnerdbtn">Click me for nerd</button>
+        <h1 id="revealnerdtext"></h1>
+    </div>
 </body>
 </html>
