@@ -6,13 +6,13 @@
     <script src="index.js"></script>
 </head>
 <body onload="init()">
-    <div>
+    <div id="part1">
         <h1>Shak is a nerd</h1>
+        Yes? <button id="yesbtn">Yes</button>
     </div>
 
-    <hr>
-
-    <div>
+    <div id="part2" style="display:none">
+        <hr>
         <h1>Who is a nerd?</h1>
         <select id="whonerdselect">
             <option value="pls">Please select</option>
@@ -22,9 +22,8 @@
         <h1 id="whonerdtext"></h1>
     </div>
 
-    <hr>
-
-    <div>
+    <div id="part3" style="display:none">
+        <hr>
         <h1>Click the button to reveal who is a nerd</h1>
         <button id="revealnerdbtn">Click me for nerd</button>
         <h1 id="revealnerdtext"></h1>
